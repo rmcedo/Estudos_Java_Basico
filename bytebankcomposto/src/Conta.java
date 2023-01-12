@@ -29,6 +29,10 @@ public class Conta {
     }
 
     public void setAgencia(int agencia) {
+        if (agencia <= 0) {
+            System.out.println("Número de Agência não pode ser menor ou igual a zero");
+            return;
+        }
         this.agencia = agencia;
     }
 
@@ -37,6 +41,10 @@ public class Conta {
     }
 
     public void setNumero(int numero) {
+        if(numero <= 0){
+            System.out.println("Número da Conta não pode ser menor ou igual a zero");
+            return;
+        }
         this.numero = numero;
     }
 
